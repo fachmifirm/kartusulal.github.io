@@ -58,6 +58,33 @@ ctx.rotate(Math.PI / 30);
 ctx.translate(-rect4.x - rect4.width / 2, -rect4.y - rect4.height / 2);
 ctx.fillRect(rect4.x, rect4.y, rect4.width, rect4.height);
 
+image.src = "10.png";
+image.onload = function() {
+
+    ctx.drawImage(image, 800, 350, 200, 300);
+
+}
+
+ctx.beginPath();
+ctx.moveTo(660, 320);
+ctx.lineTo(620, 280);
+ctx.lineWidth = 6;
+ctx.strokeStyle = "red"; //kiri
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(661, 318);
+ctx.lineTo(612, 325);
+ctx.lineWidth = 6;
+ctx.strokeStyle = "red"; //kanan
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(600, 400, 100, -1, Math.PI, true);
+ctx.lineWidth = 5;
+ctx.strokeStyle = "red";
+ctx.stroke()
+
 ctx.fillStyle = 'white';
 var rect5 = { x: 800, y: 350, width: 200, height: 300 };
 ctx.translate(rect5.x + rect5.width / 2, rect5.y + rect5.height / 2);
